@@ -1,8 +1,11 @@
-package com.example.a259.swoosh
+package com.example.a259.swoosh.Controller
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import com.example.a259.swoosh.Utilities.EXTRA_LEAGUE
+import com.example.a259.swoosh.R
 
 class SkillActivity : BaseActivity() {
 
@@ -14,5 +17,10 @@ class SkillActivity : BaseActivity() {
 
         league = intent.getStringExtra(EXTRA_LEAGUE)
         Toast.makeText(this, league, Toast.LENGTH_SHORT).show()
+    }
+
+    fun onFinishClicke(view: View){
+        val intent = Intent(this, FinishActivity::class.java)
+        startActivity(intent)
     }
 }

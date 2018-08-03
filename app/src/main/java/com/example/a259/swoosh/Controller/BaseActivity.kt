@@ -1,9 +1,8 @@
-package com.example.a259.swoosh
+package com.example.a259.swoosh.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlin.math.log
 
 open class  BaseActivity : AppCompatActivity() {
 
