@@ -1,7 +1,9 @@
 package com.example.a259.swoosh
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -9,6 +11,11 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        
+        getstartedbtn.setOnClickListener {
+            val leagueintent = Intent(this, LeagueActivity::class.java)
+            startActivity(leagueintent)
+        }
+
+
     }
 }
